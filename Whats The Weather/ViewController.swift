@@ -1,0 +1,19 @@
+//
+//  ViewController.swift
+//  Whats The Weather
+//
+//  Created by Abhishek Attri on 29/04/21.
+//
+
+import UIKit
+
+class ViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+    }
+
+
+}
+
