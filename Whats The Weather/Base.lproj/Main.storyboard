@@ -1,24 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Whats_The_Weather" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="todd-trapani-6vXQrXVFXjI-unsplash.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="tdD-2J-h0S">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's The Weather?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G8M-By-iRt">
+                                <rect key="frame" x="76" y="111" width="262" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" systemColor="linkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter yiur city:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8i1-Vn-vlM">
+                                <rect key="frame" x="144.5" y="174" width="125" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" systemColor="linkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Eg- London , Jalandhar" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tmV-RO-eJc">
+                                <rect key="frame" x="20" y="245" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7RD-bK-6rW">
+                                <rect key="frame" x="173" y="330" width="68" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1pn-ye-L0I"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0NW-zI-7XL">
+                                <rect key="frame" x="20" y="419" width="374" height="123"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="123" id="EEH-p5-WtF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="G8M-By-iRt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="67" id="4tO-Wj-Ue4"/>
+                            <constraint firstItem="8i1-Vn-vlM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FqC-rD-d0V"/>
+                            <constraint firstItem="tdD-2J-h0S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HIb-VJ-xFB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tmV-RO-eJc" secondAttribute="trailing" constant="20" id="N3D-I7-YTo"/>
+                            <constraint firstItem="G8M-By-iRt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QKH-yf-UNc"/>
+                            <constraint firstItem="0NW-zI-7XL" firstAttribute="top" secondItem="7RD-bK-6rW" secondAttribute="bottom" constant="50" id="Wwi-Aj-NGr"/>
+                            <constraint firstItem="8i1-Vn-vlM" firstAttribute="top" secondItem="G8M-By-iRt" secondAttribute="bottom" constant="29" id="XZT-qu-JGo"/>
+                            <constraint firstAttribute="bottom" secondItem="tdD-2J-h0S" secondAttribute="bottom" id="Zlu-9J-ZaW"/>
+                            <constraint firstItem="tmV-RO-eJc" firstAttribute="top" secondItem="8i1-Vn-vlM" secondAttribute="bottom" constant="47" id="dDk-Ya-hVw"/>
+                            <constraint firstItem="tmV-RO-eJc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dPv-4l-PzP"/>
+                            <constraint firstItem="7RD-bK-6rW" firstAttribute="top" secondItem="tmV-RO-eJc" secondAttribute="bottom" constant="51" id="eYW-Fh-pXt"/>
+                            <constraint firstItem="tdD-2J-h0S" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hRW-IS-fG2"/>
+                            <constraint firstItem="tdD-2J-h0S" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="isS-ut-abw"/>
+                            <constraint firstItem="7RD-bK-6rW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qiF-n8-m6r"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0NW-zI-7XL" secondAttribute="trailing" constant="20" id="quP-9X-saE"/>
+                            <constraint firstItem="0NW-zI-7XL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="wDB-j6-GNx"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textField" destination="tmV-RO-eJc" id="zvx-7E-RAX"/>
+                        <outlet property="weatherReport" destination="0NW-zI-7XL" id="xSL-Wz-TSV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="93.75"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="todd-trapani-6vXQrXVFXjI-unsplash.jpg" width="1500" height="2249"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

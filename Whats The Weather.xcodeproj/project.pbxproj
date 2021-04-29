@@ -15,6 +15,7 @@
 		602659CE2639E7C60027AE58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 602659CC2639E7C60027AE58 /* LaunchScreen.storyboard */; };
 		602659D92639E7C70027AE58 /* Whats_The_WeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602659D82639E7C70027AE58 /* Whats_The_WeatherTests.swift */; };
 		602659E42639E7C70027AE58 /* Whats_The_WeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602659E32639E7C70027AE58 /* Whats_The_WeatherUITests.swift */; };
+		602659F52639E7F50027AE58 /* todd-trapani-6vXQrXVFXjI-unsplash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 602659F42639E7F50027AE58 /* todd-trapani-6vXQrXVFXjI-unsplash.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		602659DF2639E7C70027AE58 /* Whats The WeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Whats The WeatherUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		602659E32639E7C70027AE58 /* Whats_The_WeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Whats_The_WeatherUITests.swift; sourceTree = "<group>"; };
 		602659E52639E7C70027AE58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		602659F42639E7F50027AE58 /* todd-trapani-6vXQrXVFXjI-unsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "todd-trapani-6vXQrXVFXjI-unsplash.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				602659C32639E7BF0027AE58 /* SceneDelegate.swift */,
 				602659C52639E7BF0027AE58 /* ViewController.swift */,
 				602659C72639E7BF0027AE58 /* Main.storyboard */,
+				602659F42639E7F50027AE58 /* todd-trapani-6vXQrXVFXjI-unsplash.jpg */,
 				602659CA2639E7C60027AE58 /* Assets.xcassets */,
 				602659CC2639E7C60027AE58 /* LaunchScreen.storyboard */,
 				602659CF2639E7C60027AE58 /* Info.plist */,
@@ -232,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				602659CE2639E7C60027AE58 /* LaunchScreen.storyboard in Resources */,
+				602659F52639E7F50027AE58 /* todd-trapani-6vXQrXVFXjI-unsplash.jpg in Resources */,
 				602659CB2639E7C60027AE58 /* Assets.xcassets in Resources */,
 				602659C92639E7BF0027AE58 /* Main.storyboard in Resources */,
 			);
