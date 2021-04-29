@@ -13,7 +13,10 @@ class ViewController: UIViewController {
     
     @IBAction func submit(_ sender: Any) {
         
-        if let url = URL(string: "https://www.weather-forecast.com/locations/" + textField.text! + "/forecasts/latest") {
+        let search_text = textField.text!.replacingOccurrences(of: " ", with: "-")
+        print(search_text)
+        
+        if let url = URL(string: "https://www.weather-forecast.com/locations/" + search_text + "/forecasts/latest") {
         
         let request = NSMutableURLRequest(url: url)
         
